@@ -1,0 +1,23 @@
+<clr-header class="header-6">
+    <div class="branding">
+        <a routerLink="" class="nav-link">
+          <clr-icon shape="image-gallery"></clr-icon>
+          <span class="title">Image Gallery</span>
+        </a>
+    </div>
+    <div class="header-nav">
+        <a routerLink="" class="nav-link nav-icon">
+            <clr-icon shape="cloud"></clr-icon>
+        </a>
+        <a routerLink="albums" class="nav-link nav-icon">
+            <clr-icon shape="folder"></clr-icon>
+        </a>
+        <form class="search">
+            <label for="search_input">
+                <input id="search_input" type="text" placeholder="Search images ..."
+                (keyup)="search($event.target.value)">
+            </label>
+        </form>
+    </div>
+
+</clr-header>

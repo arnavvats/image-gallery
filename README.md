@@ -2,26 +2,28 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0.
 
-## Development server
+## Description
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+This is a sample project which is an image gallery of different images.
+You can browse through different albums or search for an image title.
+The sample images are fetched from https://jsonplaceholder.typicode.com/photos.
 
-## Code scaffolding
+## Code
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+The shared folder contains
+1)image.service.ts file which fetches the images from api.
+2) The header, image grid and image-modal components used throughout the application.
+3)The image.model.ts file which is a class containing attributes for the image, the response from api is mapped to create a new object of this class.
+4) animations.ts which contains the ease-in and ease-out animations for components.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+The grid folders renders on root level of application showing all images from all albums, images are loaded 100 at a time with a load more button so that the browser does not crash.
 
-## Running unit tests
+The album-list folder is for /albums route which shows list of all individual albums by mapping them from the api response.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+The album folder is for '/albums/{id}' route and shows all the images contained in the album corresponding to that route.
 
-## Running end-to-end tests
+## Dependencies
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+The clarity design system has been used for UI and Styling.
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

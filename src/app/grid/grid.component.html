@@ -1,0 +1,8 @@
+<h3 class="text-center" [@animated]>Welcome to our image gallery!!</h3>
+<app-image-grid [images]="imageResults"></app-image-grid>
+<a (click)="loadMore()" role="tooltip"
+        aria-haspopup="true"
+         class="tooltip tooltip-sm tooltip-left">
+  <clr-icon shape="download" size="24"></clr-icon>
+  <span class="tooltip-content">Click to load more</span>
+</a>

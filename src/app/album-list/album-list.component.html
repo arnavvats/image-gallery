@@ -1,0 +1,12 @@
+<h3 [@animated]>Click an album to view it!</h3>
+<div class="row">
+    <div *ngFor="let album of albums" class="col-xs-3 text-center" (click)="showAlbum(album)">
+        <div class="card" [@animated]>
+            <div class="card-block">
+                <div class="card-title">
+                   <clr-icon shape="folder" size="24"></clr-icon> {{album}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+<div class="row">
+    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6" *ngFor="let image of images" >
+        <a class="card clickable" (click)="showImage(image)" [@animated]>
+            <div class="card-img">
+                <img [src]="image.thumbnailUrl">
+            </div>
+            <div class="card-block">
+                <p class="card-text">
+                    {{image.title | slice:0:10}}...
+                </p>
+            </div>
+        </a>
+    </div>
+  </div>
+  <ng-template #modalContainer></ng-template>

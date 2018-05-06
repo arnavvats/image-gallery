@@ -1,0 +1,7 @@
+<clr-modal [(clrModalOpen)]="open" [@animated]>
+  <h3 class="modal-title">Title : {{image.title}}</h3>
+  <h4 class="modal-title">Album ID : {{image.albumId}}</h4>
+  <div class="modal-body">
+    <img [src]="image.url">
+  </div>
+</clr-modal>
