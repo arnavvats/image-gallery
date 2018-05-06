@@ -27,3 +27,5 @@ The album folder is for '/albums/{id}' route and shows all the images contained 
 
 The clarity design system has been used for UI and Styling.
 
+## HOSTING URL
+ https://image-gall.firebaseapp.com
